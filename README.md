@@ -1,54 +1,41 @@
-# Audio Switcher
+# 🎧 Windows Audio Switcher
 
-Audio Switcher is a small Windows utility that toggles the default playback device between two user-selected audio outputs.
+**Windows Audio Switcher** is a lightweight and instant utility for Windows that allows you to toggle the default audio playback device between two selected outputs (e.g., Speakers and Headphones) with a single click.
 
-The project includes:
+![Platform](https://img.shields.io/badge/platform-Windows-0078d7.svg)
 
-- `audio_switch.pyw`: silent one-click audio output switcher.
-- `audio_device_config.py`: small graphical configurator for choosing the two devices.
-- `setup_audio_switcher.py`: installer wrapper used to create the distributable setup executable.
-- `build_installer.ps1`: build script that creates the two app executables, the setup executable, and the release zip.
+## ✨ Key Features
 
-## Requirements
+- **One-Click Toggle**: Instantly switch between two pre-configured audio devices.
+- **Silent Execution**: The switcher runs in the background without opening any intrusive windows.
+- **Visual Feedback**: The shortcut icon updates dynamically to show which device is currently active.
+- **Simple Configuration**: Includes an intuitive graphical tool to choose your preferred devices.
+- **FxSound Compatible**: Works perfectly even if you use FxSound as an intermediate audio layer.
 
-- Windows 10 or Windows 11
-- Python 3.11+ for development
-- Dependencies from `requirements.txt`
+## 🚀 Getting Started
 
-End users do not need Python when using the generated installer.
+### Installation
+1. Download and run the `Audio Switcher Setup.exe` file.
+2. Follow the installer instructions to complete the installation on your PC.
 
-## Run From Source
+### Configuration
+At first launch, or whenever you want to change your devices:
+1. Open the **Audio Switcher Configurator** from the Start menu or the installation folder.
+2. Select the two audio devices you want to toggle from the dropdown menus.
+3. Click **Save**.
 
-```powershell
-python -m pip install -r requirements.txt
-python audio_device_config.py
-python audio_switch.pyw
-```
+### Usage
+- Click the **Audio Switcher** shortcut (which you can pin to your taskbar or desktop).
+- With each click, the system will switch from one device to the other, and the icon will change to reflect the current selection.
 
-The configurator stores the selected devices in:
+## ⚙️ Technical Details
 
+The application interacts directly with the **Windows Multimedia Device (MMDevice)** APIs to ensure a fast and reliable switch without needing to restart any running audio applications.
+
+The configuration is saved locally at:
 ```text
 %LOCALAPPDATA%\Audio Switcher\audio_switch_config.json
 ```
 
-## Build Installer
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\build_installer.ps1
-```
-
-The final files are created in:
-
-```text
-release\
-```
-
-Share `release\Audio Switcher Installer.zip` or `release\Audio Switcher Setup.exe`.
-
-The installer places the application and its shortcuts in:
-
-```text
-%LOCALAPPDATA%\Audio Switcher
-```
-
-Pin `%LOCALAPPDATA%\Audio Switcher\Audio Switcher.lnk` to the Windows taskbar if you want the dynamic shortcut icon behavior. The configurator can open this folder for you after installation.
+---
+*Developed to make audio management on Windows simpler and faster.*
