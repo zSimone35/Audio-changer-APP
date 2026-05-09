@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+build/
+build_*/
+dist/
+release/
+installer/payload/
+installer/*.exe
+
+*.spec
+audio_switch_config.json
+*.log
+
+# Vecchi script locali usati per prove/manual setup.
+convert_new_icons.py
+create_icons.py
+create_shortcut.py
+refresh_icon.py
+
+.DS_Store
+Thumbs.db
