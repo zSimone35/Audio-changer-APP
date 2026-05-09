@@ -2,6 +2,7 @@
 
 **Windows Audio Switcher** is a lightweight and instant utility for Windows that allows you to toggle the default audio playback device between two selected outputs (e.g., Speakers and Headphones) with a single click.
 
+[![Download](https://img.shields.io/github/v/release/zSimone35/Audio-changer-APP?label=Download&color=blue)](https://github.com/zSimone35/Audio-changer-APP/releases/latest)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078d7.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -16,8 +17,8 @@
 ## 🚀 Getting Started
 
 ### Installation
-1. Download and run the `Audio Switcher Setup.exe` file.
-2. Follow the installer instructions to complete the installation on your PC.
+1. Download the latest release using the badge above, or go to the [Releases page](https://github.com/zSimone35/Audio-changer-APP/releases/latest).
+2. Run the `Audio Switcher Setup.exe` file and follow the installer instructions.
 
 ### Configuration
 At first launch, or whenever you want to change your devices:
