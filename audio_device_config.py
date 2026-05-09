@@ -218,7 +218,7 @@ if __name__ == "__main__":
             "Dipendenza mancante",
             "Manca una libreria necessaria per leggere i dispositivi audio.\n\n"
             "Apri PowerShell ed esegui:\n"
-            'C:/Python314/python.exe -m pip install -r "c:/Users/zitos/Desktop/File/Progetti/My Project/Cange Audio/requirements.txt"',
+            "pip install -r requirements.txt",
         )
         sys.exit(1)
 
