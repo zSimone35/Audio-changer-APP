@@ -52,7 +52,3 @@ The installer places the application and its shortcuts in:
 ```
 
 Pin `%LOCALAPPDATA%\Audio Switcher\Audio Switcher.lnk` to the Windows taskbar if you want the dynamic shortcut icon behavior. The configurator can open this folder for you after installation.
-
-## FxSound Note
-
-If FxSound is running, it can remain the Windows default playback device while adapting to the selected physical output. Audio Switcher keeps the original one-click behavior: switch endpoint, update the shortcut icon, and exit.
